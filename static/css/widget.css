@@ -1,0 +1,107 @@
+.input-wrapper {
+  padding: 8px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.toggle-all {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #DEDEDE;
+}
+
+.add-todo {
+  width: calc(100% - 50px);
+  border: none;
+  outline: none;
+  font-size: 17px;
+  font-weight: 200;  
+}
+
+.todos-view {
+  padding:0; 
+  margin:0;
+}
+
+.operation {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.operation .select {
+  border-width: 1px;
+  border-color: rgba(175, 47, 47, 0.5);
+  border-style: solid;
+}
+
+#list-box {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #eee;
+}
+.submit {
+  display: none;
+}
+.content {
+  display: inline-block;
+  width: 300px;
+  padding-left: 5px; 
+  font-size: 18px;
+}
+.btn {
+  width: 70px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  margin-right: 20px;
+}
+.a { 
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.Checkbox {
+  position: absolute;
+  margin-top: 24px;
+  opacity: 0;
+  z-index: 100;
+} 
+.Checkbox + label {
+  position:absolute;
+  width: 18px;
+  height: 18px;
+  margin-top: 21px;
+  border: 1px solid #CCCCCC;
+  border-radius: 50%;
+  background-color:#FFFFFF;
+}
+.Checkbox:checked+label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top:2px;
+  width: 9px;
+  height: 4px;
+  border: 2px solid #9BCD9B;
+  border-top-color: transparent;
+  border-right-color: transparent; 
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+.oprate .r-btn{
+  position: absolute;
+  margin-left: 330px;
+  margin-top: -40px;
+  width: 21px;
+  height: 21px;
+  background:url(static/img/del.png) no-repeat;
+  background-size:100% 100%;
+  opacity: 0.2;
+}
+.r-btn:hover {
+  opacity: 1;
+}

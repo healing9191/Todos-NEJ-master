@@ -1,0 +1,15 @@
+{list list as x}
+	<div class="a">
+		{if x.done == true}
+			<p data-id="${x.id}" id="content" class="content" contenteditable="true" style="text-decoration:line-through;">${x.content}</p>
+			<input type="checkbox" class= "Checkbox" id ="Checkbox" checked=${x.done} data-status="done">
+		{else}
+			<p data-id="${x.id}" id="content" class="content" contenteditable="true" >${x.content}</p>
+			<input type="checkbox"  class= "Checkbox" id ="Checkbox" data-status="todo">
+		{/if}
+		<label></label>
+		<div class="oprate">
+				<button data-action="delete" class="r-btn" id="del"></button>
+		</div>
+	</div>
+{/list}
